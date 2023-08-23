@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSE
-pragma solidity ^0.8.9;
+pragma solidity 0.8.19;
 
 interface IHopRouter {
     function sendToL2(
@@ -13,7 +13,7 @@ interface IHopRouter {
     ) external payable;
 }
 
-contract Bridge {
+contract BridgeETHToBaseETH {
     IHopRouter public hopRouter;
 
     constructor(address _hopRouter) {
